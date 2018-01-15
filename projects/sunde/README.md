@@ -1,2 +1,1 @@
-Derek Sun
-sunde
+"This is my assignment-1 submission!"
