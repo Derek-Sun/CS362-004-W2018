@@ -128,4 +128,20 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
 
+int great_hall_effect(int handPos, int currentPlayer, struct gameState *state);
+/*Effect for the Great Hall card, adds one card and one action for the player*/
+
+int village_effect(int handPos, int currentPlayer, struct gameState *state);
+/*Effect for the Village card, adds one card and two action for the player */
+
+int gardens_effect();
+/*Card effect for Gardens card*/
+
+int smithy_effect(int handPos, int currentPlayer, struct gameState *state);
+/*Effect for the Smithy card, adds three cards for the player*/
+
+int adventurer_effect(struct gameState *state, int currentPlayer);
+/*Effect for the Adventurer card, reveals cards from the deck until two treasure cards are drawn. The revealed
+non-treasure cards are discarded*/
+
 #endif
